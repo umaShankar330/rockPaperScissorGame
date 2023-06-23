@@ -1,0 +1,25 @@
+.popup-container {
+  display: flex;
+  width: 60%;
+  justify-content: flex-end;
+}
+.img-cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.rules-img {
+  height: 450px;
+  width: 490px;
+}
+.trigger-button {
+  width: 90px;
+  height: 35px;
+  border: none;
+  border-radius: 6px;
+}
+.close-btn-container {
+  display: flex;
+  justify-content: flex-end;
+}
