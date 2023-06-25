@@ -8,6 +8,9 @@ export const BoardContainer = styled.div`
   border: 2px solid #ffffff;
   border-radius: 10px;
   font-family: 'Bree Serif';
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
 `
 export const TextContainer = styled.div`
   display: flex;

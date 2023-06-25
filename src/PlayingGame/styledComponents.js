@@ -5,9 +5,12 @@ export const PlayingGameContainer = styled.div`
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
-  height: 400px;
-  width: 400px;
+
   list-style-type: none;
+  @media screen and (min-width: 768px) {
+    height: 400px;
+    width: 400px;
+  }
 `
 export const ItemBtn = styled.button`
   border: none;

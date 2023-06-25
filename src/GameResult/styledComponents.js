@@ -4,13 +4,16 @@ export const ResultContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 400px;
-  width: 400px;
+
   font-family: 'Roboto';
+  @media screen and (min-width: 768px) {
+    height: 400px;
+    width: 400px;
+  }
 `
 export const SelectedItemsContainer = styled.div`
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
 `
 export const PlayAgainContainer = styled.div`
   display: flex;

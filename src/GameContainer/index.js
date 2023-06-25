@@ -10,18 +10,20 @@ class GameContainer extends Component {
 
   playerSelection = id => {
     const playerItem = id
+    const {choicesList} = this.props
     let OpponentItem = ''
-    const randomNum = Math.floor(Math.random() * 9)
+    const randomNum = Math.floor(Math.random() * choicesList.length)
 
-    if (randomNum < 3) {
+    if (randomNum === 0) {
       OpponentItem = 'ROCK'
-    } else if (randomNum < 6) {
+    } else if (randomNum === 1) {
       OpponentItem = 'PAPER'
-    } else if (randomNum < 9) {
+    } else {
       OpponentItem = 'SCISSORS'
     }
 
     let result = null
+
     if (playerItem === OpponentItem) {
       result = 'IT IS DRAW'
     }
